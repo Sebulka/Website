@@ -1,0 +1,419 @@
+body{
+    margin: 0;
+    padding: 0;
+    color:black;
+    background-image: url(http://localhost:8080/GitHub/Website_Hair_dresser/HairDresser/public/graphics/B_hair_tools_BG.jpg);
+    background-position: 0px 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.is-invalid{
+    border: 1px solid red;
+}
+.invalid-feedback{
+    color: red;
+    font-size: 1em;
+}            
+sup{
+    color:red;
+}
+ /*            navbar             */
+
+.logo {
+   
+   
+    width: 180px;
+    padding: 0px;
+    margin-right: 10vw;
+}
+
+.logo:hover{
+    transform: rotate(-10deg);
+    
+}
+
+nav{
+    background-color: #4c81e2;
+    background-image: url(http://localhost:8080/GitHub/Website_Hair_dresser/HairDresser/public/graphics/line_b.svg);
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    background-position: 50% 50%;
+    height: 80px;
+    width: 100%;
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+}
+
+.navbar div{
+    width: 35%;
+    display:flex;
+}
+.navbar div:nth-child(2){
+    margin-right: 11%;
+}
+nav a{
+    padding: 10px;
+    line-height: 50px;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 1px 3px white;
+    color:#0c1931;
+    float: left;
+    
+}
+nav a:nth-child(3){
+    margin-right: 160px;
+}
+
+.welcomeUser{
+    font-size: 1.7em;
+    color: #9cd9f2;
+    height: 1em;
+    line-height: 0px;
+    padding-top: 15px;
+    padding-right: 25px;
+    float: right;
+}
+
+            /*               Home page        */
+
+
+.container{
+    position: relative;
+    display: flex;
+    padding: 10px;
+    width: 98%;
+     
+}
+
+.homeLeft{
+    width:70%;
+    margin-right: 10%;
+    position: relative;
+    padding-right: 20px;
+     
+}
+.homeLeft div{
+    display:flex;
+    align-items: center;
+    margin-left: 7%;
+}
+
+ 
+.intro{
+    padding: 5px;
+    padding-left: 40%;
+    font-size: 2em;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+    background-color: rgba(196, 131, 23, 0.5);
+    border-radius: 50px;
+}
+.homeRight{
+    width:19%;
+    margin-top: 200px;
+    position: relative;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.HomePrice{
+    color: #8B5B0C;
+    
+}
+@keyframes spinOP {
+    from {transform:rotateY(0deg);}
+    to {transform:rotateY(360deg);}
+}
+
+.pointIcon{
+    
+    animation-name: spinOP;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;  
+    height: 50px;
+   
+}
+
+.pointers{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-right: 10px;
+    width: 70%;
+    
+    
+}
+
+.pointers img{
+    padding: 10px;
+    margin-right: 10px;
+}
+
+
+
+.navbarSmall a:nth-child(3){
+    margin-right: 0px;
+}
+
+.navbarSmall a{
+    position:relative;
+    float: none; 
+    left: 50px;
+    margin:20px;
+    padding: 10px;
+    line-height:40px;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-align:left;
+    text-decoration: none;
+    text-shadow: 0px 1px 3px white;
+    color:#0c1931;
+    
+}
+
+.navbarSmall{
+    position: absolute;
+    top:40px;
+    display:none;
+    text-align: left;
+    height: 200px;
+    width:400px;
+    left: 50px;
+}
+
+ 
+.openMenu{
+        display: none;
+        height: 50px;
+        width: auto;
+        cursor: pointer;
+        float:right;
+        margin-right: 20px;
+        padding-top: 30px;
+    }
+
+.openMenu:hover{
+    transform: rotate(40deg);
+}
+
+.openMenu:active{
+    background-color: aquamarine;
+}
+   /*               Galeries        */
+
+
+.galeriesLeft{
+     display: grid;
+     grid-template-columns: 40% 40%;  
+     grid-column-gap: 20px;
+     grid-row-gap: 20px;
+}
+
+.galeries{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.galeriesPicture img{
+    height: 17vw;
+}
+
+/*               About        */
+.introAbout{
+    padding: 30px;
+    font-size: 2em;
+    color: rgb(128, 86, 18);
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+    background-color: rgba(196, 131, 23, 0.5);
+    border-radius: 50px; 
+}
+.about{
+    font-family: 'EB Garamond', serif;
+    text-align: justify;
+}
+
+
+/*               contact        */
+
+.introContact{
+    padding: 30px;
+    font-size: 2em;
+    color: rgb(128, 86, 18);
+    font-weight: 600;
+    font-family: 'EB Garamond', serif;
+    background-color: rgba(196, 131, 23, 0.5);
+    border-radius: 50px; 
+}
+.map{
+    width: 90%;
+    opacity: 0.9;
+}
+ /*               at media        */
+@media(max-width: 1500px){
+        .logo {
+
+        width: 150px;
+    }
+    
+}
+
+@media(max-width: 1200px){ 
+        nav{
+        background-position: 50% 20%;
+        
+    }
+        .logo {
+
+        width: 100px;
+    }
+    nav a{
+    padding-top: 0px;
+    font-size: 1.2em;
+    width:100px;   
+    }
+    
+    .navbar{
+    display:flex;
+    
+    
+    }
+       
+    .navbar div:nth-child(2){
+        margin-right: 5%;
+    }
+    
+    .homeLeft div{
+       margin-left: 4%;
+}
+        
+  }
+
+@media(max-width:1000px){
+    
+    .container{
+        position: relative;
+        display: block;
+        padding: 10px;
+        width: 98%;
+     
+    }
+    
+    .homeLeft{
+        width:95%;
+        margin-right: 10px;
+        position: relative;
+        padding-right: 10px;
+    }
+    .homeRight{
+    width:80%;
+    
+    text-align: center;
+    }
+    .navbar div:nth-child(2){
+        margin-right: 10%;
+    }
+    
+    
+}
+
+@media(max-width: 750px){
+        .logo {
+
+            margin-right: 2vw;
+        
+
+      }
+    
+        .homeLeft{
+           font-size: 0.7em;
+    }
+    
+    .navbar div:nth-child(2){
+        margin-right: 20%;
+    }
+}
+
+@media(max-width: 682px){
+    .navbar{
+        display:none;
+       
+    }
+   
+    .openMenu{
+        display: block;
+    }
+    nav{
+       
+        background-position: 10px 10px;
+    }
+    .galeries{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 30px;
+        margin-left: 30px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 600px){ 
+      
+        .logo {
+
+        width: 100px;
+    }
+   .homeLeft div{
+        margin-left: 0%;
+    }
+    .pointers{
+        width: 98%;
+    
+    
+}
+   
+        
+  }
+@media(max-width: 450px){
+        .logo {
+
+        margin-right: 0vw;
+         width: 80px;
+    }
+    
+    .HomePrice{
+        padding-left:10px;
+        float:right;
+    }
+    
+}
+
+             /*            footer             */
+
+
+footer{
+    height: 200px;
+    width: 97%;
+    position: absolute;
+    background-color: coral;
+    padding: 20px;
+    bottom: auto;
+}
+
+.footerRight{
+    width: 40%;
+    float: right;
+}
+.footerLeft{
+    width: 40%;
+    float: left;
+}
